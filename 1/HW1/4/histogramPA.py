@@ -1,0 +1,15 @@
+import networkx as nx
+import pygraphviz as pgv
+import matplotlib.pyplot as plt
+print "processing"
+G=nx.read_edgelist('roadNet-PA.txt',comments='#')
+print "read"
+hist = nx.degree_histogram(G)
+print "creating hist"
+plt.plot(hist)
+plt.show()
+
+
+
+print "done"
+    
